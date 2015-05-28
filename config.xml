@@ -6,22 +6,21 @@
 		
 	
 		
-    <name>XHPZ RADIO SENSACION 96.7 FM</name>
+    <name>XHPZ 96.7 FM</name>
 
     <description>
         Aplicación de streaming de estación XHPZ 96.7 FM RADIO SENSACION
     </description>
 
-    <author href="http://www.radiosensacion.fm" email="sirac@hotmail.com">
-        Heriberto Arturo Figueroa Medina
+    <author href="http://www.sirac.net" email="sirac@hotmail.com">
+        Heriberto Arturo Figueroa Medina - sirac@hotmail.com
     </author>
     
 
 
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation"      value="portrait" />
-	<preference name="AlwaysRetainTaskState"      value="true" />
-	<preference name="AndroidLaunchMode" value="singleTask" />
+	<preference name="AlwaysRetainTaskState"      value="true" />	
 	<preference name="exit-on-suspend" value="false"/>
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />

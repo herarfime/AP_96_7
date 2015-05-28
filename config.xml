@@ -20,7 +20,8 @@
 
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation"      value="portrait" />
-	<preference name="AlwaysRetainTaskState"      value="true" />	
+	
+	<preference name="AndroidLaunchMode" value="singleTask" />	
 	<preference name="exit-on-suspend" value="false"/>
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />

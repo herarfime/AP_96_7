@@ -63,9 +63,18 @@
 				
 				
 function updateBackground() {
-screenWidth = $(window).width();
-screenHeight = $(window).height();
+
+
+var screenWidth = $(window).width();
+var screenHeight = $(window).height();
 var bg = jQuery("#bg");
+
+var listo=sessionStorage.getItem("audio");
+if (listo) {				
+     sessionStorage.setItem("sirac","ya");						      
+			}
+							  else {
+
 // Proporcion horizontal/vertical. En este caso la imagen es cuadrada
 ratio = 1;
 
@@ -77,14 +86,32 @@ ratio = 1;
 
 $(bg).width(ventana_ancho);
 $(bg).height(ventana_alto);
-alert(ventana_ancho);
+sessionStorage.setItem("sirac","inicio");
+}
+
 
 
 }
 $(document).ready(function() {
-// Actualizamos el fondo al cargar la pagina
-updateBackground();
+	// Actualizamos el fondo al cargar la pagina
+	document.addEventListener("backbutton", function(e){ 
+	if($.mobile.activePage.is('#homepage')){ 
+	/* Event preventDefault/stopPropagation not required as adding backbutton listener itself override the default behaviour. Refer below PhoneGap link. */ 
+	//e.preventDefault();
+	sessionStorage.removeItem("sirac");
+	alert("sesion eliminada");
+	 navigator.app.exitApp(); 
+	} 
+	else {
+	 navigator.app.backHistory() 
+	 }
+	}, false);
+
+	updateBackground();
 });				
+
+
+
 		  
 
 		  

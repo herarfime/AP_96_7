@@ -22,7 +22,7 @@ function pad2(number) {
 	return (number < 10 ? '0' : '') + number
 }
 
-var myaudioURL = 'http://icecasthd.net:26124/stream';
+var myaudioURL = 'http://icecasthd.net:25332/xhpz';
 
 /*var myaudioURL = 'http://stream.4zzzfm.org.au:789/;';*/
 /*var myaudioURL = 'http://icecasthd.net:25660/laparrandafm';*/

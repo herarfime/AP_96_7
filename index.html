@@ -95,16 +95,9 @@ sessionStorage.setItem("sirac","inicio");
 $(document).ready(function() {
 	// Actualizamos el fondo al cargar la pagina
 	document.addEventListener("backbutton", function(e){ 
-	if($.mobile.activePage.is('#homepage')){ 
-	/* Event preventDefault/stopPropagation not required as adding backbutton listener itself override the default behaviour. Refer below PhoneGap link. */ 
-	//e.preventDefault();
 	sessionStorage.removeItem("sirac");
 	alert("sesion eliminada");
 	 navigator.app.exitApp(); 
-	} 
-	else {
-	 navigator.app.backHistory() 
-	 }
 	}, false);
 
 	updateBackground();

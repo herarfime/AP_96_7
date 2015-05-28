@@ -15,6 +15,8 @@
     <author href="http://www.sirac.net" email="sirac@hotmail.com">
         Heriberto Arturo Figueroa Medina - sirac@hotmail.com
     </author>
+	
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.4" />
     
 
 

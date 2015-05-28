@@ -71,14 +71,14 @@ var html5audio = {
 			 playButton.style.display = 'none';
 			 stopButton.style.display = 'none';
 			 activityIndicator.style.display = 'block';
-			 
+			 sessionStorage.setItem("audio","esperando");
 		}, false);
 		myaudio.addEventListener("playing", function() {
 			 isPlaying = true;
 			 playButton.style.display = 'none';
 			 activityIndicator.style.display = 'none';
 			 stopButton.style.display = 'block';
-			 
+			 sessionStorage.setItem("audio","tocando");
 		}, false);
 		myaudio.addEventListener("ended", function() {
 			 //console.log('myaudio ENDED');
@@ -102,7 +102,7 @@ var html5audio = {
 		stopButton.style.display = 'none';
 		activityIndicator.style.display = 'none';
 		playButton.style.display = 'block';
-		
+		sessionStorage.setItem("audio","pausado");
 	},
 	stop: function() {
 		isPlaying = false;
@@ -114,6 +114,6 @@ var html5audio = {
 		myaudio = null;
 		myaudio = new Audio(myaudioURL);
 		textPosition.innerHTML = '';
-		
+		sessionStorage.setItem("audio","parado");
 	}
 };

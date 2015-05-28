@@ -47,7 +47,7 @@
 		  textPosition = document.getElementById('textposition');
 		  
 			function llama() {
-			/*
+			
 				var listo=sessionStorage.getItem("audio");
 						if (listo) {				
 						      if (listo=="tocando") {
@@ -58,7 +58,7 @@
 							  }
 						
 						}		
-*/						
+						
 				}
 				
 				
@@ -90,17 +90,18 @@ sessionStorage.setItem("sirac","inicio");
 }
 
 
-
 }
+
 $(document).ready(function() {
 	// Actualizamos el fondo al cargar la pagina
-	document.addEventListener("backbutton", function(e){ 
+	/*document.addEventListener("backbutton", function(e){ 
 	sessionStorage.removeItem("sirac");
 	alert("sesion eliminada");
 	 navigator.app.exitApp(); 
 	}, false);
-
+*/
 	updateBackground();
+	
 });				
 
 
